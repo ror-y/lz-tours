@@ -46,7 +46,7 @@ export const Td = styled.td`
   &.did-play--exception:after,
   &.did-play--encore:after {
     content: "";
-    height: 8px;
+    height: 7px;
     top: 3px;
     right: 0;
     left: 0;
