@@ -1,3 +1,7 @@
+import "react-app-polyfill/ie11";
+import "jspolyfill-array.prototype.find";
+import "polyfill-array-includes";
+
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";

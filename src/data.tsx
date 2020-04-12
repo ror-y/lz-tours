@@ -1,3 +1,6 @@
+import React from "react";
+import { FlagIcon, FlagIconCode } from "react-flag-kit";
+
 export enum SONGS {
   TRAIN_KEPT_A_ROLLIN = "Train Kept A-Rollin'",
   I_CANT_QUIT_YOU_BABY = "I Can't Quit You Baby",
@@ -68,6 +71,10 @@ export enum SONGS {
   ALL_MY_LOVE = "All My Love",
 }
 
+const Flag: React.FC<{ code: FlagIconCode }> = ({ code }) => (
+  <FlagIcon code={code} size={10} />
+);
+
 export interface ISong {
   name: SONGS;
   isException?: boolean;
@@ -77,7 +84,7 @@ export interface ISong {
 export interface ITour {
   id: string;
   name: string;
-  flag: string;
+  flag: any;
   year: number;
   shows: number;
   songs: ISong[];
@@ -87,7 +94,7 @@ const tours: ITour[] = [
   {
     id: "1c438916",
     name: "Scandinavia",
-    flag: "🇩🇰",
+    flag: <Flag code="DK" />,
     year: 1968,
     shows: 14,
     songs: [
@@ -106,7 +113,7 @@ const tours: ITour[] = [
   {
     id: "4081b991",
     name: "UK",
-    flag: "🇬🇧",
+    flag: <Flag code="GB" />,
     year: 1968,
     shows: 16,
     songs: [
@@ -126,7 +133,7 @@ const tours: ITour[] = [
   {
     id: "d7cd062b",
     name: "North America",
-    flag: "🇺🇸",
+    flag: <Flag code="US" />,
     year: 1968,
     shows: 36,
     songs: [
@@ -147,7 +154,7 @@ const tours: ITour[] = [
   {
     id: "cc92d399",
     name: "UK and Scandinavia",
-    flag: "🇬🇧",
+    flag: <Flag code="GB" />,
     year: 1969,
     shows: 33,
     songs: [
@@ -168,7 +175,7 @@ const tours: ITour[] = [
   {
     id: "5bae02b1",
     name: "North America Spring",
-    flag: "🇺🇸",
+    flag: <Flag code="US" />,
     year: 1969,
     shows: 28,
     songs: [
@@ -190,7 +197,7 @@ const tours: ITour[] = [
   {
     id: "2f99abe5",
     name: "UK Summer",
-    flag: "🇬🇧",
+    flag: <Flag code="GB" />,
     year: 1969,
     shows: 12,
     songs: [
@@ -211,7 +218,7 @@ const tours: ITour[] = [
   {
     id: "f8e69d0a",
     name: "North America Summer",
-    flag: "🇺🇸",
+    flag: <Flag code="US" />,
     year: 1969,
     shows: 46,
     songs: [
@@ -234,7 +241,7 @@ const tours: ITour[] = [
   {
     id: "b3a29330",
     name: "Europe Autumn",
-    flag: "🇪🇺",
+    flag: <Flag code="EU" />,
     year: 1969,
     shows: 5,
     songs: [
@@ -252,7 +259,7 @@ const tours: ITour[] = [
   {
     id: "66d39321",
     name: "North America Autumn",
-    flag: "🇺🇸",
+    flag: <Flag code="US" />,
     year: 1969,
     shows: 20,
     songs: [
@@ -275,7 +282,7 @@ const tours: ITour[] = [
   {
     id: "db1a04c4",
     name: "UK",
-    flag: "🇬🇧",
+    flag: <Flag code="GB" />,
     year: 1970,
     shows: 8,
     songs: [
@@ -300,7 +307,7 @@ const tours: ITour[] = [
   {
     id: "9aa6948d",
     name: "Europe",
-    flag: "🇪🇺",
+    flag: <Flag code="EU" />,
     year: 1970,
     shows: 16,
     songs: [
@@ -325,7 +332,7 @@ const tours: ITour[] = [
   {
     id: "72652df6",
     name: "North America Spring",
-    flag: "🇺🇸",
+    flag: <Flag code="US" />,
     year: 1970,
     shows: 28,
     songs: [
@@ -348,7 +355,7 @@ const tours: ITour[] = [
   {
     id: "b149df9d",
     name: "Iceland, Bath and Germany, Summer",
-    flag: "🇩🇪",
+    flag: <Flag code="DE" />,
     year: 1970,
     shows: 6,
     songs: [
@@ -371,7 +378,7 @@ const tours: ITour[] = [
   {
     id: "153a0a8b",
     name: "North America Summer",
-    flag: "🇺🇸",
+    flag: <Flag code="US" />,
     year: 1970,
     shows: 25,
     songs: [
@@ -397,7 +404,7 @@ const tours: ITour[] = [
   {
     id: "5032689e",
     name: "UK Spring",
-    flag: "🇬🇧",
+    flag: <Flag code="GB" />,
     year: 1971,
     shows: 13,
     songs: [
@@ -422,7 +429,7 @@ const tours: ITour[] = [
   {
     id: "fbf283f8",
     name: "Europe",
-    flag: "🇪🇺",
+    flag: <Flag code="EU" />,
     year: 1971,
     shows: 6,
     songs: [
@@ -449,7 +456,7 @@ const tours: ITour[] = [
   {
     id: "0280df9f",
     name: "North America",
-    flag: "🇺🇸",
+    flag: <Flag code="US" />,
     year: 1971,
     shows: 26,
     songs: [
@@ -476,7 +483,7 @@ const tours: ITour[] = [
   {
     id: "64f26790",
     name: "Japan",
-    flag: "🇯🇵",
+    flag: <Flag code="JP" />,
     year: 1971,
     shows: 5,
     songs: [
@@ -503,7 +510,7 @@ const tours: ITour[] = [
   {
     id: "78a66401",
     name: "UK Winter",
-    flag: "🇬🇧",
+    flag: <Flag code="GB" />,
     year: 1971,
     shows: 16,
     songs: [
@@ -533,7 +540,7 @@ const tours: ITour[] = [
   {
     id: "6c258045",
     name: "Australasia",
-    flag: "🇦🇺",
+    flag: <Flag code="AU" />,
     year: 1972,
     shows: 6,
     songs: [
@@ -560,7 +567,7 @@ const tours: ITour[] = [
   {
     id: "19d9dc2a",
     name: "North America",
-    flag: "🇺🇸",
+    flag: <Flag code="US" />,
     year: 1972,
     shows: 21,
     songs: [
@@ -595,7 +602,7 @@ const tours: ITour[] = [
   {
     id: "6705b5de",
     name: "Japan",
-    flag: "🇯🇵",
+    flag: <Flag code="JP" />,
     year: 1972,
     shows: 6,
     songs: [
@@ -624,7 +631,7 @@ const tours: ITour[] = [
   {
     id: "638f291f",
     name: "UK",
-    flag: "🇬🇧",
+    flag: <Flag code="GB" />,
     year: 1972,
     shows: 28,
     songs: [
@@ -653,7 +660,7 @@ const tours: ITour[] = [
   {
     id: "5737b1f6",
     name: "Europe",
-    flag: "🇪🇺",
+    flag: <Flag code="EU" />,
     year: 1973,
     shows: 21,
     songs: [
@@ -678,7 +685,7 @@ const tours: ITour[] = [
   {
     id: "da0ea5a6",
     name: "North America",
-    flag: "🇺🇸",
+    flag: <Flag code="US" />,
     year: 1973,
     shows: 37,
     songs: [
@@ -706,7 +713,7 @@ const tours: ITour[] = [
   {
     id: "99e6b319",
     name: "North America",
-    flag: "🇺🇸",
+    flag: <Flag code="US" />,
     year: 1975,
     shows: 39,
     songs: [
@@ -736,7 +743,7 @@ const tours: ITour[] = [
   {
     id: "0f895006",
     name: "Earls Court",
-    flag: "🇬🇧",
+    flag: <Flag code="GB" />,
     year: 1975,
     shows: 5,
     songs: [
@@ -766,7 +773,7 @@ const tours: ITour[] = [
   {
     id: "6f969be0",
     name: "North America",
-    flag: "🇺🇸",
+    flag: <Flag code="US" />,
     year: 1977,
     shows: 44,
     songs: [
@@ -800,7 +807,7 @@ const tours: ITour[] = [
   {
     id: "0081cd06",
     name: "Knebworth",
-    flag: "🇬🇧",
+    flag: <Flag code="GB" />,
     year: 1979,
     shows: 2,
     songs: [
@@ -832,7 +839,7 @@ const tours: ITour[] = [
   {
     id: "cd2f5117",
     name: "Europe",
-    flag: "🇪🇺",
+    flag: <Flag code="EU" />,
     year: 1980,
     shows: 14,
     songs: [

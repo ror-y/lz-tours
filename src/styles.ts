@@ -77,6 +77,7 @@ export const SongName = styled.td`
 export const TourFlag = styled.td`
   vertical-align: top;
   font-size: 10px;
+  background: rgba(0, 0, 0, 0.02);
 `;
 
 export const ToursYear = styled.div`
