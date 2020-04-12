@@ -1,14 +1,14 @@
 import React from "react";
 import * as _ from "lodash";
 import "./App.css";
-import tours, { ISong, ITour } from "./data";
+import tours, { ISong } from "./data";
 
 const uniqSongs = _.uniq(
   _.flatMap(tours, (tour) => tour.songs.map((song) => song.name))
 );
 
 const getCellWidth = (shows: number) => {
-  return shows;
+  return shows * 2;
 };
 
 const getCellClassname = (tourSongs: ISong[], song: string) => {
