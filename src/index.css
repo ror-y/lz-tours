@@ -1,13 +1,91 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 12px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+table {
+  table-layout: fixed;
+  border-spacing: 0 0;
+  text-align: left;
+}
+
+tr {
+  position: relative;
+}
+
+tr:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+tr:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.did-play,
+.didnt-play,
+.tour-name {
+  /* min-width: 40px;
+  max-width: 40px; */
+}
+
+.did-play,
+.did-play--exception,
+.did-play--encore {
+  position: relative;
+}
+.did-play:after,
+.did-play--exception:after,
+.did-play--encore:after {
+  content: "";
+  height: 10px;
+  background-color: mediumseagreen;
+  top: 5px;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+.did-play:after {
+  background-color: mediumseagreen;
+}
+
+.did-play--exception:after {
+  background-color: mediumturquoise;
+}
+
+.did-play--encore:after {
+  background-color: mediumpurple;
+}
+
+.didnt-play {
+  color: red;
+}
+
+.tour-name {
+}
+
+.tours {
+}
+
+.tours__year {
+  font-size: 8px;
+}
+
+.zebra-dark {
+  background: rgba(0, 0, 0, 0.05);
 }
