@@ -1,17 +1,17 @@
 import React from "react";
-import _ from "lodash";
+import * as _ from "lodash";
 import "./App.css";
-import tours from "./data";
+import tours, { ISong, ITour } from "./data";
 
 const uniqSongs = _.uniq(
   _.flatMap(tours, (tour) => tour.songs.map((song) => song.name))
 );
-console.log(uniqSongs);
-const getCellWidth = (number_shows) => {
-  return number_shows;
+
+const getCellWidth = (shows: number) => {
+  return shows;
 };
 
-const getCellClassname = (tourSongs, song) => {
+const getCellClassname = (tourSongs: ISong[], song: string) => {
   const found = tourSongs.find((tourSong) => tourSong.name === song);
 
   if (found) {
@@ -40,7 +40,7 @@ function App() {
                 <td
                   key={tour.id}
                   style={{
-                    width: `${getCellWidth(tour.number_shows || 100)}px`,
+                    width: `${getCellWidth(tour.shows || 100)}px`,
                   }}
                   className={`timeline-cell ${
                     idx % 2 === 0 ? "zebra-dark" : "zebra-light"
@@ -54,7 +54,7 @@ function App() {
             {_.map(tours, (tour, idx, collection) => (
               <td
                 key={`${tour} ${idx}`}
-                style={{ width: getCellWidth(tour.number_shows || 100) }}
+                style={{ width: getCellWidth(tour.shows || 100) }}
                 className="tour-name"
               >
                 <div>{tour.flag}</div>
