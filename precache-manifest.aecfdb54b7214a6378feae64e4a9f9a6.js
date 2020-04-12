@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "557f61ce8fe7bac54f6fd617f6198211",
+    "revision": "14cea44a1dfdb6140fb7e7b07236682a",
     "url": "/lz-tours/index.html"
   },
   {
-    "revision": "64a754d0c9df7bace81b",
+    "revision": "4487b8ad4661e2a2dabd",
     "url": "/lz-tours/static/css/main.e90ff1b8.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lz-tours/static/js/2.e38e4698.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64a754d0c9df7bace81b",
-    "url": "/lz-tours/static/js/main.c13775a1.chunk.js"
+    "revision": "4487b8ad4661e2a2dabd",
+    "url": "/lz-tours/static/js/main.1d6dd13b.chunk.js"
   },
   {
     "revision": "f1610bf8681422358dd7",

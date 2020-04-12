@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/lz-tours/static/css/main.e90ff1b8.chunk.css",
-    "main.js": "/lz-tours/static/js/main.c13775a1.chunk.js",
-    "main.js.map": "/lz-tours/static/js/main.c13775a1.chunk.js.map",
+    "main.js": "/lz-tours/static/js/main.1d6dd13b.chunk.js",
+    "main.js.map": "/lz-tours/static/js/main.1d6dd13b.chunk.js.map",
     "runtime-main.js": "/lz-tours/static/js/runtime-main.8372b63b.js",
     "runtime-main.js.map": "/lz-tours/static/js/runtime-main.8372b63b.js.map",
     "static/js/2.e38e4698.chunk.js": "/lz-tours/static/js/2.e38e4698.chunk.js",
     "static/js/2.e38e4698.chunk.js.map": "/lz-tours/static/js/2.e38e4698.chunk.js.map",
     "index.html": "/lz-tours/index.html",
-    "precache-manifest.80600132327fa3a2f748519c8e9619c3.js": "/lz-tours/precache-manifest.80600132327fa3a2f748519c8e9619c3.js",
+    "precache-manifest.aecfdb54b7214a6378feae64e4a9f9a6.js": "/lz-tours/precache-manifest.aecfdb54b7214a6378feae64e4a9f9a6.js",
     "service-worker.js": "/lz-tours/service-worker.js",
     "static/css/main.e90ff1b8.chunk.css.map": "/lz-tours/static/css/main.e90ff1b8.chunk.css.map",
     "static/js/2.e38e4698.chunk.js.LICENSE.txt": "/lz-tours/static/js/2.e38e4698.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8372b63b.js",
     "static/js/2.e38e4698.chunk.js",
     "static/css/main.e90ff1b8.chunk.css",
-    "static/js/main.c13775a1.chunk.js"
+    "static/js/main.1d6dd13b.chunk.js"
   ]
 }
